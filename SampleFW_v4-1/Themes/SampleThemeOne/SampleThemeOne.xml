@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme_properties>
+	<label>Theme One</label><!-- The theme label is displayed in the LiveBall console... The user will see this text, in a drop-down menu, when choosing/switching themes for a creative. Make this label short and descriptive... under 20 characters is recommended -->
+	<description>Theme one description</description><!-- The theme description is for personal reference or to communicate to other developers who may work on the same framework. -->
+	<responsive>true</responsive> <!-- include <responsive>true</responsive> to the theme .xml file if a themeResponsive.css file is present. This will communicate to the ion platform that this theme is responsive. If it is also configured with a responsive master (indicated within the master's .xml file) then a button will be added, within the creative studio editor, to toggle responsive on/off. If this parameters is not included within the master and theme .xml files, then the creative studio toggle will not appear in the editor.-->
+</theme_properties>

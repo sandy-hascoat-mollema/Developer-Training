@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme_properties>
+	<label>Theme Two</label><!-- The theme label is displayed in the LiveBall console... The user will see this text, in a drop-down menu, when choosing/switching themes for a creative. Make this label short and descriptive... under 20 characters is recommended-->
+	<description>Theme two description</description><!-- The theme description is for personal reference or to communicate to other developers who may work on the same framework. -->
+</theme_properties>

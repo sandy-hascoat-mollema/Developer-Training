@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework_properties>
+<developer>ion</developer><!--The developer value does not change and should stay set to 'ion'-->
+	<label>Sample framework label</label>
+	<description>Sample framework description.</description>
+	<version>4.0</version><!--The version content can change, this is useful when making updates to an existing FW and is used for reference only. The existing FW in the LiveBall console will still get overridden when uploaded.-->
+	<mode>d</mode><!--The mode value does not change and should stay set to 'd'-->
+</framework_properties>
+
+<!--NOTE: The 'label' and 'description' values appear when viewing information about the framework within the LiveBall console framework library -->
+

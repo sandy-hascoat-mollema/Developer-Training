@@ -1,0 +1,271 @@
+/* Place theme specific style attributes in this file */
+
+		body {
+			background:#000 url(body_bg.jpg) no-repeat top center;
+			font:12px Arial, Helvetica, sans-serif;
+			line-height:1.35; /* specify default line height as a pure number value (no px/em)...adjusting the value as desired. This will allow the line-height to flex depending on what size the user specifies their text within the rich text editor */
+			color:#f2f2f2;
+		}
+
+/*-------------------
+Fonts/Typography
+------------------- */		
+		
+		h1 {font-size:30px;line-height:1.40;color:#fff;}
+		
+		h2 {font-size:22px;line-height:1.40;color:#fff;}
+		
+		h3 {font-size:18px;color:#fff;}
+		
+		h4, h5, h6 {font-size:14px;color:#fff;}
+	
+		a {text-decoration:none;color:#ffea00}
+		
+		a:hover {text-decoration:underline;}
+		
+		ul, ol    {margin-left: 1.3em;}
+		ul        {list-style: none;}
+		ul li 	  {background: url(bullet.png) no-repeat 0px 7px;padding-left:14px;}
+		ol        {list-style-type: decimal;margin-left: 2.5em;}
+		
+		
+		figcaption {font-size:11px;margin-left: 2em;}
+		
+/*-------------------
+Structure/Layout
+------------------- */
+
+		#container {
+			width:960px;
+			padding:0 0 10px;
+			background:transparent url(container_bg.png);
+		}
+		
+		section.pre_content {padding-top:10px;}
+		
+		section.content {padding-top:10px}
+		
+		.content_hook {padding:0 10px}
+		
+		section.post_content {padding:0 10px;}
+			
+/*-------------------
+Header
+------------------- */
+		
+		header {
+			min-height:90px;
+			height:auto !important;
+			height:90px;
+			position:relative;
+			background:transparent;
+			padding:0;
+			padding-bottom:10px;
+			width:940px;
+			margin:0 auto;
+			}
+	
+		#header_logo {
+			float:left;
+			margin:15px 50px 0 0;
+			
+		}
+		
+		#header_link {}
+		
+		.header_text_wrap {max-width:275px;width:auto !important;width:275px;float:right;margin:30px 0 0 10px;text-align:right;color:#8a837a;}
+		.header_text_wrap h2 {}
+					
+		.header_social {text-align:right;}
+		
+		.header_social .widget_social {margin-left:5px;}
+
+/*-------------------
+Navigation
+------------------- */
+
+		nav {
+			padding:15px 0 0 40px;
+			color:#fff; /* specify styles if user swaps link element for text element. i.e. for nav 'on' state. */
+			font-size:14px;			
+		}
+		
+		nav ul	  {margin:0;}
+		nav ul li {padding:0;background:none;}
+		
+		nav a {
+			color:#888;		
+			padding:0 20px 0 5px;
+			display:block;
+			background: transparent;
+			border-left:#888 1px solid;
+			height:50px;
+			line-height:85px;
+		}
+		
+		nav a:hover {
+			color:#fff;
+			text-decoration:none;
+		}
+		
+		nav a.active {
+			color:#ffea00;
+			font-weight:bold;
+			text-decoration:none;			
+		}
+
+/*-------------------
+Content
+------------------- */
+
+		figure, figure.rt {
+			background:#4f4f4f;
+			padding:10px;	
+		}
+		
+		.caption {
+			font-size:11px;
+			color:#000;
+		}
+		
+		hr {color:#292929;background-color:#292929;}
+			
+/*-------------------
+Button
+------------------- */	
+
+		/*default button styles*/
+		a.button_link, .pf_submit_button {
+			font-family:Arial, Helvetica, sans-serif;
+			background: #ffea00; /* Old browsers */
+			background: -moz-linear-gradient(top, #ffea00 0%, #fbca01 13%, #f39002 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffea00), color-stop(13%,#fbca01), color-stop(100%,#f39002)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #ffea00 0%,#fbca01 13%,#f39002 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #ffea00 0%,#fbca01 13%,#f39002 100%); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #ffea00 0%,#fbca01 13%,#f39002 100%); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffea00', endColorstr='#f39002',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #ffea00 0%,#fbca01 13%,#f39002 100%); /* W3C */		
+			display:inline-block;
+			color:#000;
+			text-decoration:none;
+			font-weight:normal;
+			border:#101010 1px solid;
+			margin:0 0 10px 0;
+			padding:0 22px;
+		}
+		
+		/*size-specific (s,m,l and xl) button styles, including form submit*/
+		
+		a.button_link.btn_s, .form_s .pf_submit_button { /* specify unique form button styles within the themeform.css if you would like to override theme */
+			font-size:12px;			
+			height:24px;
+			line-height:24px;
+			
+						
+		}
+		
+		a.button_link.btn_m, .form_m .pf_submit_button {
+			font-size:18px;
+			line-height:34px;
+			height:34px;
+			padding:0 60px;
+		}
+		
+		a.button_link.btn_l, .form_l .pf_submit_button {
+			font-size:24px;
+			line-height:36px;
+			height:36px;
+			padding:0 50px;
+			
+		}
+		
+		a.button_link.btn_xl .form_xl .pf_submit_button{
+			font-size:30px;
+			line-height:41px;
+			height:41px;
+			padding:0 40px;
+			
+		}
+		
+		a.button_link.full{
+			display:block;
+			text-align:center;
+		}
+		
+		a:hover.button_link, a:focus.button_link, .pf_submit_button:hover, .pf_submit_button:focus{
+			color:#4f4f4f;
+						
+		}
+		
+
+		
+	
+/*-------------------
+Footer
+------------------- */
+		
+		#footer_wrap {
+			width:100%;
+			
+		}
+		footer {
+			width:940px;
+			margin-top:0;
+			padding:15px 10px;
+			color:#666;
+			font-size:10px;
+			text-align:left;
+		}
+		
+		.copyright {
+			float:left;
+			
+		}
+		
+		.footer_links {
+			float:right;
+	
+		}
+		
+		.footer_links a {
+			padding:0 7px;
+			color:#fff;
+			border-left: #fff solid 1px;
+		}
+		
+		.footer_links a.first_footer_link {padding-left:0;border:none;}
+		.footer_links a.last_footer_link {}
+		
+		.footer_links a:hover {
+			
+			color:#ffea00;
+			text-decoration:none;
+		}
+		
+		.footer_social {
+			float:right;
+			margin-left:10px;	
+		}
+		
+		.footer_social .widget_social {
+			margin-left:5px;
+		}
+		
+		.footer_fineprint {
+			clear:both;
+			text-align:left;
+			padding-top:5px;
+		}
+
+
+/*-------------------
+Hidden items
+------------------- */
+
+		#footer_logo {display:none;}
+		
+
+
+
+
+

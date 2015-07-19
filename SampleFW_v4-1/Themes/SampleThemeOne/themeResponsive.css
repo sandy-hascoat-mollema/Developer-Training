@@ -1,0 +1,78 @@
+#container { width: auto; max-width: 960px; }
+footer { width: auto; max-width: 940px; }
+/* #footer_wrap { min-width:1006px; } */
+
+/* CONVERT PIXEL-BASED GRID TO PERCENTAGE */
+.content_hook { padding:0 1.041666667%; }
+
+/* ----------------- MEDIA OVERRIDES - START ----------------- */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+/*	#container { width: 768px; }
+	#footer_wrap { min-width:794px; }
+	footer { width: 728px; }*/
+}
+@media (max-width: 959px) {
+	html {
+		background-image:none;
+	}
+	#container {
+		-moz-border-radius:0;
+		-webkit-border-radius:0;
+		border-radius:0;
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+		box-shadow:none;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+/*	#container { width: 640px; }
+	#footer_wrap { min-width:666px; }
+	footer { width: 600px; } */
+}
+
+@media (max-width: 640px) {
+	.pf_text, 
+	.pf_text_narrow, 
+	.pf_text_wide { width:75%; }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+/*	#container { width: 320px; }
+	#footer_wrap { min-width:346px; }
+	footer { width: 280px; } */
+	
+	nav { float:none; height:auto; margin-right:0; }
+	nav ul li { float:none; border-top:1px solid #ddd; }
+	nav a { padding:0 10px; }
+	
+	.content_hook { padding:0 10px; }
+	
+	a.button_link.btn_m, 
+	.form_m .pf_submit_button,
+	a.button_link.btn_l, 
+	.form_l .pf_submit_button,
+	a.button_link.btn_xl { /* specify unique form button styles within the themeform.css if you would like to override theme */
+		font-size:16px;
+		line-height:39px;
+		height:39px;
+		padding:0 25px 0 10px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius:5px 5px 5px 5px;
+		background: #0066cc url(btn_small_bg.gif) no-repeat top right;
+	}
+	.form_m .pf_submit_button,
+	.form_l .pf_submit_button { /* specify unique form button styles within the themeform.css if you would like to override theme */
+		line-height:41px;
+		height:41px;
+		*line-height:39px;
+		*height:39px;
+		padding: 0 45px 0 30px;
+	}
+}
+/* ----------------- MEDIA OVERRIDES - END ----------------- */
+

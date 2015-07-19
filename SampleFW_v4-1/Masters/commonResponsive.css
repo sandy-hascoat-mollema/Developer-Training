@@ -1,0 +1,340 @@
+/* The styles located within this css file will override any styles within the common.css file. For example, the widths of the fixed column grid specced within common.css are overridden below to % values... Include any responsive-type styles to this document */
+
+/* BASE */
+
+@-ms-viewport {
+	width: device-width;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+/* CONVERT PIXEL-BASED GRID TO PERCENTAGE */
+.grid { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: 2.127659574468085%;
+	*margin-left: 2.074468085106383%;
+	width: 100%;
+	min-height: 30px;
+}
+.grid.first { margin-left:0; }
+
+.grid_content { 
+	margin:0; 
+	margin-left: 2.127659574468085%;
+	*margin-left: 2.074468085106383%; 
+}
+.grid_content.first { margin-left:0; }
+.grid_content table { margin:0; }
+
+.col12 {
+	width: 100%;
+	*width: 99.94680851063829%;
+}
+.col11 {
+	width: 91.48936170212765%;
+	*width: 91.43617021276594%;
+}
+.col10 {
+	width: 82.97872340425532%;
+	*width: 82.92553191489361%;
+}
+.col9 {
+	width: 74.46808510638297%;
+	*width: 74.41489361702126%;
+}
+.col8 {
+	width: 65.95744680851064%;
+	*width: 65.90425531914893%;
+}
+.col7 {
+	width: 57.44680851063829%;
+	*width: 57.39361702127659%;
+}
+.col6 {
+	width: 48.93617021276595%;
+	*width: 48.88297872340425%;
+}
+.col5 {
+	width: 40.42553191489362%;
+	*width: 40.37234042553192%;
+}
+.col4 {
+	width: 31.914893617021278%;
+	*width: 31.861702127659576%;
+}
+.col3 {
+	width: 23.404255319148934%;
+	*width: 23.351063829787233%;
+}
+.col2 {
+	width: 14.893617021276595%;
+	*width: 14.840425531914894%;
+}
+.col1 {
+	width: 6.382978723404255%;
+	*width: 6.329787234042553%;
+}
+
+/* content pods */
+.col_container .grid.col12 {
+	width: 99.99999999999999%;
+	*width: 99.94736842105262%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col11 {
+	width: 91.57894736842104%;
+	*width: 91.52631578947367%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col10 {
+	width: 83.1578947368421%;
+	*width: 83.10526315789473%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col9 {
+	width: 74.73684210526315%;
+	*width: 74.68421052631578%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col8 {
+	width: 66.3157894736842%;
+	*width: 66.26315789473684%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col7 {
+	width: 57.89473684210526%;
+	*width: 57.84210526315789%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col6 {
+	width: 49.47368421052631%;
+	*width: 49.42105263157894%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col5 {
+	width: 41.05263157894736%;
+	*width: 40.99999999999999%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col4 {
+	width: 32.63157894736842%;
+	*width: 32.57894736842105%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col3 {
+	width: 24.21052631578947%;
+	*width: 24.1578947368421%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col2 {
+	width: 15.789473684210524%;
+	*width: 15.736842105263156%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.col1 {
+	width: 7.368421052631578%;
+	*width: 7.31578947368421%;
+	margin-left: 1.0526315789473684%;
+	*margin-left: 1%;
+}
+.col_container .grid.first {margin-left:0; }
+.col_container .pod { width:auto;margin-left:0;  }
+
+.choice_container, 
+.col_container { margin:0; }
+
+.img_right {float:right;margin:0;}
+.img_right img { 
+	padding:0;
+	margin:0 0 5px 5px;
+	box-sizing: border-box;
+}
+
+.pod .img_right {float:right;margin:0;}
+.pod .img_right img {
+	margin:0;
+	padding:0 0 0 5px;
+	box-sizing: border-box;
+}
+
+.img_left {float:left;margin:0;}
+.img_left img {
+	margin:0;
+	padding:0 5px 5px 0;
+	box-sizing: border-box;
+}
+
+.pod .img_left {float:left;margin:0;}
+.pod .img_left img {
+	margin:0;
+	padding:0 5px 0 0;
+	box-sizing: border-box;
+}
+
+
+/* ----------------- CONDITIONAL MEDIA DISPLAY - START ----------------- */
+/* Desktop */
+.visible-phone { display: none !important; }
+.visible-tablet { display: none !important; }
+.hidden-desktop { display: none !important; }
+.visible-desktop { display: inherit !important; }
+.visible-desktop-tablet { display: none !important; }
+.visible-phone-tablet { display: none !important; }
+.visible-phone-port { display: none !important; }
+img {
+	max-width: 100%;
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+	width/*\**/: auto\9;
+}
+@media (min-width: 980px) {
+  .image-full-width-desktop img,
+  img.image-full-width-desktop { 
+  	padding-left:0 !important; 
+  	padding-right:0 !important; 
+  	margin-left:0 !important; 
+  	margin-right:0 !important; 
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .hidden-desktop { display: inherit !important; }
+  .visible-desktop { display: none !important; }
+  .visible-tablet { display: inherit !important; }
+  .hidden-tablet { display: none !important; }
+  
+  
+  .image-full-width-tablet img,
+  img.image-full-width-tablet { 
+  	padding-left:0 !important; 
+  	padding-right:0 !important; 
+  	margin-left:0 !important; 
+  	margin-right:0 !important; 
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hidden-desktop { display: inherit !important; }
+  .visible-desktop { display: none !important; }
+  .visible-phone { display: inherit !important; }
+  .hidden-phone { display: none !important; }
+  
+  .image-full-width-tablet img,
+  img.image-full-width-tablet { 
+  	padding-left:0 !important; 
+  	padding-right:0 !important; 
+  	margin-left:0 !important; 
+  	margin-right:0 !important; 
+  }
+  
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .hidden-desktop { display: inherit !important; }
+  .visible-desktop { display: none !important; }
+  .visible-phone { display: inherit !important; }
+  .hidden-phone { display: none !important; }
+  
+  .visible-phone-tablet { display: none !important; }
+  .visible-phone-port { display: inherit !important; }
+  
+  .image-full-width-phone img,
+  img.image-full-width-phone { 
+  	padding-left:0 !important; 
+  	padding-right:0 !important; 
+  	margin-left:0 !important; 
+  	margin-right:0 !important; 
+  }
+}
+/* ----------------- CONDITIONAL MEDIA DISPLAY - END ----------------- */
+
+
+/* ----------------- MEDIA OVERRIDES GRID - START ----------------- */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 769px) {
+	.col_container .grid.col3 {
+		width: 49.47368421052631%;
+		margin-left: 1.0526315789473684%;
+	}
+	.col_container .grid.col3:nth-child(odd) {
+		margin-left: 0;
+		clear:left;
+	}
+	.col_container .grid.col4 {
+	    float: none;
+	    display: block;
+		width: auto;
+	  	margin-left: 0;
+	}
+}
+@media (max-width: 640px) {
+	.row_5_7_cols .col5,
+	.col_container .row_5_7_cols .grid.col5,
+	.row_5_7_cols .col7,
+	.col_container .row_5_7_cols .grid.col7 {
+	    float: none;
+	    display: block;
+		width: auto;
+	  	margin-left: 0;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.col1,
+	.col2,
+	.col3,
+	.col4,
+	.col5,
+	.col6,
+	.col7,
+	.col8,
+	.col9,
+	.col10,
+	.col11,
+	.col12 {
+	    float: none;
+	    display: block;
+		width: auto;
+	  	margin-left: 0;
+    }
+	
+	/* content pods */
+	.col_container .grid.col2,
+	.col_container .grid.col3,
+	.col_container .grid.col6,
+	.col_container .grid.col8,
+	.col_container .grid.col9,
+	.col_container .grid.col12 {
+	    float: none;
+	    display: block;
+		width: auto;
+	  	margin-left: 0;
+	}
+	
+}
+/* ----------------- MEDIA OVERRIDES GRID - END ----------------- */
+

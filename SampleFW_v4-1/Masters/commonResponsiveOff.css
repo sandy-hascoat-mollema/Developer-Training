@@ -1,0 +1,8 @@
+/* If the user disables a responsive layout within the platform editor, the commonResponsive.css file will be swapped out for this commonResponsiveOff.css file. In this example, we remove all responsive styles so that the master page layout only picks up the styles from the common.css file */
+
+img {
+	max-width: 100%;
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+	width/*\**/: auto\9;
+}

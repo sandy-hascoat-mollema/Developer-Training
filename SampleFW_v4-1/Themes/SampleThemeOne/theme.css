@@ -1,0 +1,273 @@
+/* Place theme specific style attributes in this file */
+
+
+/*-------------------
+Launch Pad v4 theme.css
+------------------- */
+		html { margin: 0;padding: 0; height: 100%;background:#d9d9d9 url(body_bg.gif) repeat-x top;}
+		body {	
+					
+			font:12px Arial, Helvetica, sans-serif;
+			line-height:1.35; /* specify default line height as a pure number value (no px/em)...adjusting the value as desired. This will allow the line-height to flex depending on what size the user specifies their text within the rich text editor */
+			color:#333;
+
+		}
+		
+
+/*-------------------
+Fonts/Typography
+------------------- */		
+		
+		h1 {font-size:30px;color:#000;line-height:1.40;}
+		
+		h2 {font-size:22px;color:#000;line-height:1.40;}
+		
+		h3 {font-size:18px;color:#000;}
+		
+		h4 {font-size:16px;color:#000;}
+		
+		h5, h6 {font-size:14px;color:#000;}
+	
+		a {text-decoration:none;color:#0056cc}
+		
+		a:hover {text-decoration:underline;}
+		
+		ul, ol    {margin-left: 1.3em;}
+		ul        {list-style: none;}
+		ul li 	  {background: url(bullet.png) no-repeat 0px 7px;padding-left:14px;}
+		ol        {list-style-type: decimal;margin-left: 2.5em;}
+		
+		
+		figcaption {font-size:11px;margin-left: 1em;}
+		
+/*-------------------
+Structure/Layout
+------------------- */
+
+		#container {
+			width:960px;
+			background:#fff;
+			padding:0 0 10px;
+			-webkit-box-shadow: 0px 2px 8px 2px #cdcdcd;
+			-moz-box-shadow: 0px 2px 8px 2px #cdcdcd;
+			box-shadow: 0px 2px 8px 2px #cdcdcd;
+			-moz-border-radius-topleft: 0px;
+			-moz-border-radius-topright: 0px;
+			-moz-border-radius-bottomright: 10px;
+			-moz-border-radius-bottomleft: 10px;
+			-webkit-border-radius: 0px 0px 10px 10px;
+			border-radius: 0px 0px 10px 10px;
+		}
+		
+		section.pre_content {padding-top:0;}
+		
+		section.content {padding-top:10px}
+		
+		.content_hook {padding:0 10px}
+		
+		section.post_content {padding:0 10px;}
+			
+/*-------------------
+Header
+------------------- */
+		
+		header {position:relative;background:#f1f1f1;border-bottom:1px solid #ddd}
+	
+		#header_logo {
+			float:left; 
+			margin:13px 20px 5px 10px;
+		}
+		
+		#header_link {}
+		
+		.header_text_wrap {float:right;margin:13px 10px 0 0;text-align:right;color:#000;}
+		.header_text_wrap h2 {color:#000;}
+					
+		.header_social {}
+		
+		.header_social .widget_social {margin-left:5px;}
+
+/*-------------------
+Navigation
+------------------- */
+
+		nav {
+			float:right;	
+			clear:both;
+			margin: 5px 10px 0 0;		
+			height:28px;
+			line-height:28px;
+			color:#666; /* specify styles if user swaps link element for text element. i.e. for nav 'on' state. */
+			font-size:14px;
+			}
+		
+		nav ul	  {margin:0;}
+		nav ul li {padding:0;background:none}
+		
+		nav a {
+			color:#666;		
+			padding:0 16px;
+			display:block;
+		}
+		
+		nav a:hover {
+			color:#0056cc;
+			text-decoration:none;	
+		}
+		
+		nav a.active {		
+			color:#666;
+			background:#fff;
+			text-decoration:none;
+			border:1px solid #ddd;
+			border-bottom:none;
+			padding:0 15px;
+			line-height:26px;
+			-moz-border-radius:4px 4px 0px 0px;
+			-webkit-border-radius:4px 4px 0px 0px;
+			border-radius:4px 4px 0px 0px;
+		}
+
+/*-------------------
+Content
+------------------- */
+
+		figure, figure.rt {
+			background:#fff;
+			padding:10px;	
+			border:1px dotted #bfbfbf;
+		}
+		
+		.caption {
+			font-size:11px;
+		}
+		
+		hr {color:#d2d2d2;background-color:#d2d2d2;}
+			
+/*-------------------
+Button
+------------------- */	
+
+		/*default button styles*/
+		a.button_link, .pf_submit_button {
+			font-family:Arial, Helvetica, sans-serif;		
+			display:inline-block;
+			color:#fff;
+			text-decoration:none;
+			font-weight:bold;
+			-moz-border-radius:7px;
+			-webkit-border-radius:7px;
+			border-radius:7px 7px 7px 7px; /* need to specify all 4 corners for ie9 */
+			-moz-box-shadow:2px 2px 5px #d4d4d4;
+			-webkit-box-shadow:2px 2px 5px #d4d4d4;
+			box-shadow:2px 2px 5px #d4d4d4; /*The first two values are the offset of the shadow, the third the blur radius, and the fourth value the spread radius.*/
+			border:1px solid #fff;
+			margin:0 0 10px 2px;
+		}
+		
+		
+		
+		/*size-specific (s,m,l and xl) button styles, including form submit*/
+		
+		a.button_link.btn_s, .form_s .pf_submit_button { /* specify unique form button styles within the themeform.css if you would like to override theme */
+			font-size:16px;
+			line-height:39px;
+			height:39px;
+			padding:0 25px 0 10px;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			border-radius:5px 5px 5px 5px;
+			background: #0066cc url(btn_small_bg.gif) no-repeat top right;
+		}
+		
+		a.button_link.btn_m, .form_m .pf_submit_button {
+			font-size:20px;
+			line-height:43px;
+			height:43px;
+			padding:0 60px 0 10px;
+			background: #0066cc url(btn_large_bg.gif) no-repeat top right;
+		}
+		
+		a.button_link.btn_l, .form_l .pf_submit_button {
+			font-size:24px;
+			line-height:43px;
+			height:43px;
+			padding:0 80px 0 10px;
+			background: #0066cc url(btn_large_bg.gif) no-repeat top right;
+		}
+		
+		a.button_link.btn_xl {
+			font-size:26px;
+			line-height:43px;
+			height:43px;
+			padding:0 80px 0 10px;
+			background: #0066cc url(btn_large_bg.gif) no-repeat top right;
+		}
+		
+		a.button_link.full{
+			display:block;
+		}
+		
+		a:hover.button_link, a:focus.button_link, .pf_submit_button:hover, .pf_submit_button:focus{
+			background-position:bottom right;
+			color:#fff;
+			text-decoration:none;
+		}
+		
+
+		
+	
+/*-------------------
+Footer
+------------------- */
+	
+		footer {
+			width:940px;
+			margin-top:0px;
+			padding:10px;
+			color:#666;
+			font-size:11px;
+		}
+		
+		.copyright {
+			float:left;
+			margin-right:10px;
+		}
+		
+		.footer_links {
+			float:right;
+			
+		}
+		
+		.footer_links a {
+			margin-left:5px;
+			padding-left:5px;
+			color:#0056cc;
+			border-left:1px solid #a2a2a2;
+		}
+		
+		.footer_links a.first_footer_link {padding-left:0;border:none;}
+		.footer_links a.last_footer_link {}
+		
+		.footer_social {
+			float:right;
+			margin-left:10px;	
+		}
+		
+		.footer_social .widget_social {
+			margin-left:5px;
+		}
+		
+		.footer_fineprint {
+			clear:both;
+			text-align:left;
+			padding-top:5px;
+		}
+
+
+
+/*-------------------
+Hidden items
+------------------- */
+
+		#footer_logo {display:none;}

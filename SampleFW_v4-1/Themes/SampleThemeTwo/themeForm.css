@@ -1,0 +1,231 @@
+/* Preview Published Form CSS */
+
+/*-------------------
+Form container
+------------------- */
+
+		.form_container {
+			background:#4f4f4f;
+			padding:5px 5px 20px;
+			margin-bottom:10px;
+			color:#fff;
+		
+		}.form_container:after	    {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+		.form_container  		    {*zoom: 1;}
+			
+		.form_hook {}
+		
+		.form_content {}
+		.form_content:after	    {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+		.form_content  		    {*zoom: 1;}
+		
+		body.iframe .form_container {
+			background:none;
+			padding:0px;
+			
+		}
+		
+		.form_image {margin-top:-5px; margin-left:-5px;margin-bottom:5px;}
+		body.iframe .form_image {margin-top:0; margin-left:0;}
+		
+		.form_indent {padding:10px 10px; background:transparent;}
+		body.iframe .form_indent {padding:10px 0;}
+		.form_indent h2,h3 {}
+		.form_top_content{}
+		.form_btm_content{}
+		.caption {color:#fff;line-height:12px;}
+	
+
+
+/*-------------------
+Form table
+------------------- */
+
+		.form_block{clear:both;margin:10px 0 0 -5px}
+		
+
+		.pf_form_table {
+			clear:both;
+			*clear:none;
+			width:100%;
+			font:12px/16px Arial, Verdana, sans-serif;
+			color:#fff;
+		}
+		
+		body.mobile .pf_form_table {font-size:14px;} /* font size for the mobile master pages */
+
+
+/*-------------------
+Labels/Rows
+------------------- */
+		.pf_field_row {vertical-align:top;}
+		
+		.pf_field_row_bad {
+			vertical-align:top;
+			background:#4f4f4f;
+			color:#fff;
+			
+		}
+		
+		.pf_label_cell {
+			text-align:right;
+			padding:5px 16px 2px 10px;
+		}
+		
+		.pf_label_cell_bad {
+			padding:5px 16px 2px 10px;
+			text-align:right;
+		}
+		
+		.pf_label_text {}
+		
+		.pf_label_text_bad {font-weight:bold;}
+		
+		.pf_field_cell {padding:2px 0;}
+		
+		.pf_field_cell_bad {padding:2px 0;}
+		
+		.pf_hint_cell {padding-left:5px;}
+		
+		.pf_hint_text {
+			font-size:10px;
+			color:#666;
+			display:block;
+		}
+		
+		.pf_hint_text_bad {
+			font-size:10px;
+			color:#666;
+			display:block;
+		}
+		
+		.pf_prefield_cell {padding:2px 10px;}
+		
+		.pf_prefield_text {font-weight:bold;}
+		
+		.pf_postfield_cell {padding:2px 10px;}
+		
+		.pf_postfield_text {}
+
+
+/*-------------------
+Field divider
+------------------- */
+
+		.pf_hr_cell {}
+		
+		.pf_hr {
+			color:#fff;
+			width:100%;
+			margin:1px auto 1px auto;
+		}
+		
+		.pf_form_table hr {
+			height:1px;
+			border:0;
+			color:#fff;
+			background-color:#fff;
+		}
+
+/*-------------------
+Form fields
+------------------- */
+
+		.pf_text, .pf_text_narrow, .pf_text_wide {
+			width:130px;
+			border:#b9b9b9 1px solid;
+			border-color:#b9b9b9;
+			padding:5px 3px;
+			background:#b9b9b9;
+			color:#000;
+			font-size:14px;
+			
+		}
+		
+		.pf_text_narrow {width:75px;}
+		
+		.pf_text_wide {width:250px;}
+		
+		.pf_multiline, .pf_multiline_narrow, .pf_multiline_wide {
+			width:130px;
+			border:#b9b9b9 1px solid;
+			border-color:#b9b9b9;
+			padding:5px 3px;
+			background:#b9b9b9;
+			color:#000;
+			font-size:14px;
+		}
+		
+		.pf_field_row_bad .pf_text, .pf_field_row_bad .pf_text_narrow, .pf_field_row_bad .pf_text_wide, .pf_field_row_bad .pf_multiline, .pf_field_row_bad .pf_multiline_narrow, .pf_field_row_bad .pf_multiline_wide{
+			background: #fff url(form_error.gif) no-repeat right;	
+			border:#feb900 1px solid;padding:5px 3px;color:#666;font-size:14px;
+		}
+		
+		.pf_multiline_narrow {width:75px;}
+		
+		.pf_multiline_wide {width:250px;}
+		
+		.pf_dropdown {width:130px;}
+		
+		.pf_dropdown_narrow {width:75px;}
+		
+		.pf_dropdown_wide {width:250px;}
+		 
+		.pf_listbox {}
+		
+		.pf_listbox_narrow {width:75px;}
+		
+		.pf_listbox_wide {width:250px;}
+		 
+		.pf_checktable {border-collapse:collapse;}
+		
+		.pf_radiotable {
+			border-collapse:collapse;
+			vertical-align:top;
+		}
+		
+		input:focus{
+			border:1px solid #ffffff;
+			color:#000;
+			font-size:14px;
+		}
+
+/*-------------------
+Submit
+------------------- */ 
+		.pf_submit_cell {padding:7px 10px 0;}
+		
+		.pf_submit_button { /* see button styles in the theme.css file to spec default submit buttons */
+			
+			position:relative;
+			cursor:pointer;
+			overflow: visible; /* this is needed so ie7/ie6 will respect the padding specified for the form submit button (note: the padding is getting pulled from the button styles within the theme.css file) */
+		}
+		
+		.pf_submit_image {border:none;}
+		
+		.pf_submit_button{ /* picks up styles from the theme.css file, include additional styles or styles to override here */
+			
+			
+			
+		}
+		
+		 .form_s .pf_submit_button {
+			
+			
+			
+		}
+		.form_m .pf_submit_button {
+			
+			
+			
+		}
+		
+		.form_l .pf_submit_button {
+			
+			
+		}
+		
+		.pf_submit_button:hover{
+			
+		}

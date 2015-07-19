@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<master_properties>
+	<label>Sample Responsive Master</label> <!-- If auto-generating the master page thumbnail, LiveBall will use the value of the label here on top of a screenshot of the master page layout. -->
+	<description>Sample responsive master description</description>
+	<category>Sample master category</category> <!-- The category is optional, include if you would like to categorize your master page layouts into specific categories. For instance, you could place all of your masters with forms in to a category called "Form Pages". This will allow the end user to pick the type of layout desired based on category. Great tool for frameworks with a lot of master page layouts. If you choose not to use this feature, remove the entire "category" tag here.-->
+	<responsive>true</responsive> <!-- If the layout is responsive, then include <responsive>true</responsive> to the master .xml file. This will communicate to the ion platform that this layout is responsive. If it is also configured with a responsive theme (indicated within the theme's .xml file) then a button will be added, within the creative studio editor, to toggle responsive on/off. If this parameters is not included within the master and theme .xml files, then the creative studio toggle will not appear in the editor. Allows for responsive layouts to be used for both responsive and non-responsive cases-->
+</master_properties>
